@@ -17,7 +17,7 @@
       for(var i=0;i<dodos.length;i++)
    	  {
 
-   	  	 $("<li class='addli'><textarea class='content' disabled>"+dodos[i].name+"</textarea><div class='del'>×</div></li>").appendTo(todos);
+   	  	 $("<li class='addli'><textarea class='content' disabled>"+dodos[i].name+"</textarea><div class='del'>×</div><div class='icon ding'>&#xe62d;</div></li>").appendTo(todos);
    	  }
    }
 
@@ -43,7 +43,7 @@
 	   	 	name:v,
 	   	    state:0
 	   	 };
-		var li=$("<li class='addli'><textarea class='content' disabled >"+todo.name+"</textarea><div class='del'>×</div></li>");
+		var li=$("<li class='addli'><textarea class='content' disabled >"+todo.name+"</textarea><div class='del'>×</div><div class='icon ding'>&#xe62d;</div></li>");
 		con.val(todo.name)
 	    li.appendTo(todos);
 	    dodos.push(todo);
@@ -105,6 +105,12 @@
 		
 	})*/
 	
+//颜色
+var color=$(".color")
+var colorArr=["green","blue","pink","purple","yellow","grey"];
 
+color.on('touchend',function(){
+	
+})
  })
  
