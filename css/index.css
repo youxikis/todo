@@ -58,9 +58,9 @@ body {
 .header {
   background: #866240;
   width: 100%;
-  height: 0.84rem;
+  height: 0.86rem;
   border-bottom: 2px solid #84623f;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   position: relative; }
   .header span {
     display: block;
@@ -80,25 +80,27 @@ body {
 
 .todos {
   width: 100%;
-  padding: 0.24rem;
-  padding-top: 0.3rem; }
+  padding: 0.43rem;
+  padding-top: 0.47rem; }
   .todos li {
     float: left;
-    width: 48%;
+    width: 46%;
     height: 3rem;
     background: url(../image/green.png);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
     background-size: contain;
     border: 1px solid #ccc;
     padding: 0.2rem;
-    margin-right: 0.24rem;
     margin-bottom: 0.2rem; }
-    .todos li div {
+    .todos li textarea {
       width: 100%;
       height: 100%;
       border: none;
       resize: none;
       outline: none;
-      background: rgba(255, 255, 255, 0); }
+      background: rgba(255, 255, 255, 0);
+      resize: none; }
     .todos li .del {
       width: 0.5rem;
       height: 0.5rem;
@@ -106,12 +108,14 @@ body {
       background: url(../image/grey.png);
       text-align: center;
       line-height: 0.5rem;
+      font-weight: 600;
       background-size: contain;
       position: absolute;
       right: -0.15rem;
       top: -0.15rem;
       display: none; }
   .todos li:nth-of-type(2n+2) {
+    float: right;
     margin-right: 0rem; }
 
 #add {
@@ -123,7 +127,7 @@ body {
   color: #fff;
   text-align: center;
   line-height: 1rem;
-  font-size: 0.3rem;
+  font-size: 0.5rem;
   font-weight: 600;
   position: fixed;
   right: 0.5rem;
@@ -218,4 +222,5 @@ body {
 
 .done {
   font-style: italic;
-  color: #C0C0C0; }
+  color: #C0C0C0;
+  text-decoration: line-through; }
