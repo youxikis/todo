@@ -1,5 +1,4 @@
  $(function(){
- 
  	var todos=$(".todos");
 	var add=$("#add");
 	var con=$(".content");
