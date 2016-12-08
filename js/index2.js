@@ -27,10 +27,10 @@
         box.css("display","block");
 	})
 	//点击编辑进行编辑
-	write.on("touchend",function(){
+	/*write.on("touchend",function(){
 		inCon.removeAttr("disabled");
 		
-	})
+	})*/
 	inCon.focus(function(){
 		write.addClass("disnone");
 		confirm.css("display","block");
